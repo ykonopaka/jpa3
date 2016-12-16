@@ -1,0 +1,17 @@
+group 'com.ekonopaka'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.5.Final'
+    compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.0.Final-redhat-1'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.193'
+
+    testCompile("junit:junit")
+}
